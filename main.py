@@ -14,6 +14,9 @@ serverName = ''
 serverIp = '' #ip + port / localhost:25565
 botToken = ''
 
+#embed
+supportVersion = "1.9.x - 1.21.4"
+
 #Hướng dẫn sử dụng
 #1. vào kênh cần thông báo status sử dụng /start
 #2. để stop sử dụng /stop
@@ -35,8 +38,8 @@ async def server_lookup(ctx):
             title=serverName,
             description=(
                 "**Thông tin**\n"
-                "> **IP:** `103.161.113.54:25049`\n"
-                "> **Version:** `1.9.x -> 1.21.4`\n"
+                f"> **IP:** `{serverIp}`\n"
+                f"> **Version:** `{supportVersion}`\n"
                 "**Trạng thái**\n"
                 f"> **Status:** ``🟢 Online``\n"
                 f"> **Ping:** `{latency}ms`\n"
